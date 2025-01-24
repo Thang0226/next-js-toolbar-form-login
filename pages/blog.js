@@ -4,7 +4,7 @@ import Layout from "./layout/layout";
 function Home() {
   return (
       <Layout>
-        <h1>Homepage</h1>
+        <h1>Blogs</h1>
       </Layout>
   )
 }

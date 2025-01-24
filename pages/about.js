@@ -1,12 +1,12 @@
 import styles from "./layout/layout.module.css"
 import Layout from "./layout/layout";
 
-function Home() {
+function About() {
   return (
       <Layout>
-        <h1>Homepage</h1>
+        <h1>About Us</h1>
       </Layout>
   )
 }
 
-export default Home
+export default About
