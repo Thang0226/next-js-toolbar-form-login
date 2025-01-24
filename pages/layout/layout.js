@@ -7,7 +7,7 @@ export default function Layout({children}) {
             <ul>
                 <li>
                     <Link href="/" className={styles.link}>
-                        Home
+                        Log out
                     </Link>
                 </li>
                 <li>

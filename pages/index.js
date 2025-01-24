@@ -1,12 +1,21 @@
-import styles from "./layout/layout.module.css"
+import styles from '../styles/login.module.css'
 import Layout from "./layout/layout";
+import { useRouter } from 'next/navigation'
 
-function Home() {
-  return (
-      <Layout>
-        <h1>Homepage</h1>
-      </Layout>
-  )
+export default function LoginPage() {
+    const router = useRouter()
+    return (
+        <Layout>
+            <div className={styles.wrapper}>
+                <div className={styles.formContent}>
+                    <h2>Login</h2>
+                    <form>
+                        <input className={styles.input} type="text" id="login" name="login" placeholder="login"/>
+                        <input className={styles.input} type="text" id="password" name="login" placeholder="password"/>
+                        <button type="button" className={styles.button} onClick={() => router.push('/home')}>Log In</button>
+                    </form>
+                </div>
+            </div>
+        </Layout>
+    )
 }
-
-export default Home
